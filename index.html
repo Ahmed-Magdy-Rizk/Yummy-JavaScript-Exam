@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ====== Link Bootstrap ===== -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- ====== Link Font Awesome ===== -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- ====== Link Css Style Sheet ===== -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body class="bg-black">
+    <!-- ====== Side Bar Section ===== -->
+    <aside class="bg-black position-fixed top-0 vh-100 z-2 d-flex">
+        <div class="side-bar-tabs p-4 d-flex flex-column justify-content-between vh-100">
+            <ul class="list-unstyled side-bar-links overflow-hidden">
+                <li class="clickable" id="search">Search</li>
+                <li class="clickable" id="categories">Categories</li>
+                <li class="clickable" id="area">Area</li>
+                <li class="clickable" id="ingredients">Ingredients</li>
+                <li class="clickable" id="contact-us">Contact Us</li>
+            </ul>
+            <div class="side-bar-footer">
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+                <p class="text-white">Copyright © 2019 All Rights </br> Reserved.</p>
+            </div>
+        </div>
+        <div class="side-bar-logo bg-white d-flex flex-column justify-content-between align-items-center p-2">
+            <img src="images/logo.png" alt="">
+            <!-- <i class="fa-solid fa-x h2"></i> -->
+            <i class="fa-solid fa-bars h2 clickable open-close"></i>
+            <div class="d-flex flex-column">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes pt-1"></i>
+            </div>
+        </div>
+    </aside>
+    <div class="container">
+        <div class="row py-5 g-3" id="rowData">
+        </div>
+    </div>
+    <div class="spinner-wrapper">
+        <div class="inner-loading-screen position-fixed z-3 top-0 start-0 end-0 bottom-0 justify-content-center align-items-center text-white bg-black d-flex">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+    </div>    
+    <!-- ====== Link Bootstrap ===== -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ====== Link jQuery ===== -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- ====== Link Main JS File ===== -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

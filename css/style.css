@@ -1,0 +1,40 @@
+/* ===== Global Claess ===== */
+.clickable {
+    cursor: pointer;
+}
+/* ===== Side Bar Section ===== */
+aside {
+    left: -247px;
+    transition: 0.7s;
+}
+
+aside ul li {
+    font-size: 16px;
+    color: #eee;
+    padding: 8px;
+    position: relative;
+    top: 200px;
+    transition: all 0.8s;
+}
+
+.side-bar-links {
+    transition: top 0.7s ease;
+}
+
+.side-bar-logo img {
+    width: 50px;
+}
+/* ===== Meals Section ===== */
+.meal:hover .meal-layer {
+    top: 0;
+}
+.meal-layer {
+    transition: 0.5s;
+    top: 100%;
+    background-color: #f9f6f6ca;
+}
+
+.meal-layer p {
+    overflow: hidden;
+}
+
